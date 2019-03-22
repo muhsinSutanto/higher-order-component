@@ -5,10 +5,10 @@ class ClickCounter extends Component {
 
 
     render() { 
-        const {count, incrementCount} = this.props
+        const {count, incrementCount, name} = this.props
         return ( 
             <React.Fragment>
-                <button onClick={incrementCount}> Clicked {count} time </button>
+                <button onClick={incrementCount}> {name} Clicked {count} time  </button>
             </React.Fragment>
          );
     }
